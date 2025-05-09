@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
+
+.Canceledstripe, .cancel{
+  width: 1000px;
+margin: auto;
+margin-top: 160px;
+  background-color: #dcdcdc;
+  padding: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Canceledstripe .icon {
+   color: RED;
+   font-size: 50px;
+}
+.Canceledstripe h2{
+  text-transform: capitalize;
+  margin-top: 15px 0px;
+  font-weight: 900;
+  font-size: 40px;
+  color:#324d67;
+}
+.Canceledstripe .email-msg{
+   font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.cancel p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.Canceledstripe .description{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+}
+.Canceledstripe .description .email{
+  margin-left: 5px;
+  color: #f02d34;
+}
+
+
+
+@media screen and (max-width:1075px) {
+.Canceledstripe-wrapper, .cancel-wrapper{
+ 
+  min-height: 67vh;
+}
+.Canceledstripe, .cancel {
+   width: 370px;
+  margin-top: 100px;
+  padding: 20px;
+}
+.Canceledstripe{
+  height: 350px;
+}
+.Canceledstripe h2{
+  font-size: 17px;
+}
+.btn-container{
+  width: 300px;
+  margin: auto;
+}
+}
